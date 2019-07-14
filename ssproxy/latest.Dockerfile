@@ -12,6 +12,7 @@ ENV SS_HOST 0.0.0.0
 ENV SS_PORT 13003
 ENV SS_PASS 123
 ENV SS_MODE aes-256-cfb
+ENV SS_MAXFILE 64
 
 WORKDIR /root
 RUN yum install epel-release -y 
@@ -41,4 +42,4 @@ RUN yum install git vim wget net-tools gcc automake make pcre-devel \
     && popd && ldconfig \
     && ln -sf /usr/local/lib/libmbedcrypto.so.0 /usr/lib64/libmbedcrypto.so.0 \
     && rm -rf shadowsocks-libev
-CMD ss-server -s $SS_HOST -p $SS_PORT -k $SS_PASS -m $SS_MODE -u --fast-open
+CMD ss-server -s $SS_HOST -p $SS_PORT -k $SS_PASS -m $SS_MODE -n $SS_MAXFILE -u --fast-open
