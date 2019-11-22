@@ -36,7 +36,7 @@
     "postcss-px-to-viewport": "^0.0.3",
     "postcss-pxtorem": "^4.0.1",
     "postcss-theme-variables": "^1.0.0",
-    "vant": "^1.6.7",
+    "vant": "^2.2.14",
     "vue-clipboard2": "^0.3.0",
     "vue-thailand-address-autocomplete": "^0.0.8"
   },
