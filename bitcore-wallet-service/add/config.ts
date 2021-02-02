@@ -21,7 +21,7 @@ module.exports = {
 
   storageOpts: {
     mongoDb: {
-      uri: 'mongodb://192.168.0.116:27017/bws',
+      uri: 'mongodb://db:27017/bws',
       dbname: 'bws'
     }
   },
