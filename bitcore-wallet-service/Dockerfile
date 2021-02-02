@@ -10,7 +10,7 @@ ADD add/config.ts /bws/src/config.ts
 
 WORKDIR /bws
 
-RUN npm install
+RUN npm install && npm audit fix
 
 EXPOSE 3232 3380
 
